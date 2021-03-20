@@ -968,36 +968,6 @@ transition: opacity 0.2s ease-out;
   margin-top: 10px;
 
 }
-@media (max-width:720px) {
-  .menu{
-      display: none;
-  }
-  .trigger {
-      display: inline-block;
-      margin: 3px;
-      cursor: pointer;
-      margin-top: 20px;
-      
-  }
-  .trigger i {
-      display: block;
-      width: 30px;
-      height: 4px;
-      margin: 4px auto;
-      background: #8CC5F9;
-      background-color: #ffffff;
-      color: black;
-      
-  }
-  
-  .show {
-      display: block;
-  }
-  li{
-      margin-top: 10px;
-  }
-  
-}
 @media (max-width:1020px)  {
   .standart-div1 {
     width: 900px;
@@ -1082,6 +1052,15 @@ transition: opacity 0.2s ease-out;
     font-size: 12px;
   }
 }
+@media (max-width:810px) {
+  .bar-info-communications {
+    display: flex;
+    font-size: 11px;
+  }
+  .bar-info a {
+    
+  }
+}
 @media (max-width:720px) {
   .menu{
       display: none;
@@ -1124,6 +1103,12 @@ transition: opacity 0.2s ease-out;
     display: flex;
     /* flex-direction: column; */
     flex-wrap:wrap ;
+  }
+  .logo {
+    display: flex;
+  }
+  .bar-info {
+    visibility: hidden;
   }
   .home_one {
     display: flex;
@@ -1168,6 +1153,7 @@ transition: opacity 0.2s ease-out;
   }
   .Proces-img {
     display: block;
+    margin-left: 0;
   }
   .procesgo {
     height: 400px;
@@ -1190,9 +1176,30 @@ transition: opacity 0.2s ease-out;
 
   }
   
-  .standart-small {
-    
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+  background: url('../FotoLogo/icnNova/next.png') no-repeat; /*заливка фона картинкой без повторений*/
+  float: right;
+  margin: 100px -0px -40px 0; 
+  display: block;
+  height: 68px;
+  width: 68px;
   }
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+  background: url('../FotoLogo/icnNova/prev.png') no-repeat; /*заливка фона картинкой без повторений*/
+  float: left;
+  margin: 100px 0px -40px -0px; 
+  display: block;
+  height: 68px;
+  width: 68px;
+}
   .futer_comens2 {
     display: none;
     visibility: hidden ;

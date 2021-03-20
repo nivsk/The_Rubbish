@@ -35,19 +35,18 @@
           <a class="callme" href="">Позвоните мне</a>
         </div>
       </div> 
-      <div class="nav">
-        <span id="trigger" class="trigger">
-            <i></i>
-            <i></i>
-            <i></i>
-        </span>
-        <ul id="menu" class="menu">
-            <li><a href="#home_one">Головная</a></l>
-            <li><a href="#ZT">Магазин</a></li>
-            <li><a href="#work-div">Примеры Работ</a></li>
-            <li><a href="#questions">Вопросы</a></li>
-        </ul>
-    </div>
+      <!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
+      <input id="toggle" type="checkbox">
+      <label class="toggle-container" for="toggle">
+<span class="button button-toggle"></span>
+      </label>
+    <nav class="nav">
+      <a rel="nofollow" rel="noreferrer" class="nav-item" href="#home_one">Головная</a>
+      <a rel="nofollow" rel="noreferrer" class="nav-item" href="#ZT">Магазин</a>
+      <a rel="nofollow" rel="noreferrer" class="nav-item" href="#work-div">Примеры Работ</a>
+      <a rel="nofollow" rel="noreferrer" class="nav-item" href="#questions">Вопросы</a>
+    </nav>
+    
       <div class="home">
         <div id="home_one" class="home_one">
           <h1>
@@ -455,10 +454,10 @@
               </div>
               <div id="controls">
                 <label for="switch1"></label>
-                <label for="switch2"></label>
+                <label class="swi2" for="switch2"></label>
                 <label for="switch3"></label>
                 <label for="switch4"></label>
-                <label for="switch5"></label>
+                <label class="swi5" for="switch5"></label>
               </div>
               <div id="active">
                 <label for="switch1"></label>
